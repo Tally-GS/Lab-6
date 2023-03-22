@@ -13,6 +13,7 @@ def decode(password): #pass decoder
     for i in password:
         decoded = decoded + str((int(i) - 3) % 10) #shifts number and makes sure each number stays single diget
     return decoded
+
 def main():
     decoder = True
     while decoder:
